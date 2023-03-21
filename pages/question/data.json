@@ -1,0 +1,424 @@
+{
+  "fields": [{
+    "__config__": {
+      "label": "手写签名",
+      "labelWidth": null,
+      "showLabel": true,
+      "tag": "signCanvas",
+      "type": "signCanvas",
+      "required": false,
+      "layout": "colFormItem",
+      "span": 24,
+      "formId": 101,
+      "renderKey": "1011679291962867"
+    },
+    "__slot__": {
+      "prefix": "",
+      "suffix": ""
+    },
+    "style": {
+      "width": "100%"
+    },
+    "__vModel__": "field101",
+    "size": "default"
+  }, {
+    "__config__": {
+      "label": "纯文本",
+      "showLabel": false,
+      "tag": "texts",
+      "type": "texts",
+      "span": 24,
+      "layout": "colFormItem",
+      "required": false,
+      "regList": [],
+      "desc_texts": "大萨达萨达撒撒大大大",
+      "align": "left",
+      "fontSize": 14,
+      "color": "#000",
+      "formId": 102,
+      "renderKey": "1021679293154485"
+    },
+    "style": {
+      "width": "100%"
+    },
+    "size": "default",
+    "placeholder": "纯文本",
+    "disabled": false,
+    "__vModel__": "field102"
+  }, {
+    "__config__": {
+      "label": "下拉选择",
+      "showLabel": true,
+      "tag": "a-select",
+      "type": "select",
+      "layout": "colFormItem",
+      "span": 24,
+      "required": true,
+      "regList": [],
+      "changeTag": true,
+      "document": "",
+      "result": "",
+      "formId": 105,
+      "renderKey": "1051679292012066"
+    },
+    "__slot__": {
+      "options": [{
+        "label": "选项一",
+        "value": 1
+      }, {
+        "label": "选项二",
+        "value": 2
+      }]
+    },
+    "placeholder": "请选择下拉选择",
+    "style": {
+      "width": "100%"
+    },
+    "allowClear": true,
+    "disabled": false,
+    "showSearch": false,
+    "mode": "default",
+    "__vModel__": "field105",
+    "size": "default"
+  }, {
+    "__config__": {
+      "label": "级联选择",
+      "url": "https://www.fastmock.site/mock/f8d7a54fb1e60561e2f720d5a810009d/fg/cascaderList",
+      "method": "get",
+      "dataPath": "list",
+      "dataConsumer": "options",
+      "showLabel": true,
+      "labelWidth": null,
+      "tag": "a-cascader",
+      "type": "cascader",
+      "layout": "colFormItem",
+      "defaultValue": [1, 2],
+      "dataType": "dynamic",
+      "span": 24,
+      "required": true,
+      "regList": [],
+      "changeTag": true,
+      "document": "https://element.eleme.cn/#/zh-CN/component/cascader",
+      "result": "",
+      "formId": 118,
+      "renderKey": "1181679292024194"
+    },
+    "options": [{
+      "id": 1,
+      "value": 1,
+      "label": "选项1",
+      "children": [{
+        "id": 2,
+        "value": 2,
+        "label": "选项1-2"
+      },
+	  {
+	    "id": 3,
+	    "value": 3,
+	    "label": "选项1-3"
+	  }
+	  ]
+    },
+	{
+	  "id": 5,
+	  "value": 5,
+	  "label": "选项5",
+	  "children": [{
+	    "id": 6,
+	    "value": 6,
+	    "label": "选项5-1"
+	  },
+	  {
+	    "id": 7,
+	    "value": 7,
+	    "label": "选项5-7"
+	  }
+	  ]
+	}
+	],
+    "fieldNames": {
+      "label": "label",
+      "value": "value",
+      "children": "children"
+    },
+    "placeholder": "请选择级联选择",
+    "style": {
+      "width": "100%"
+    },
+    "expandTrigger": "click",
+    "showSearch": false,
+    "disabled": false,
+    "changeOnSelect": false,
+    "allowClear": false,
+    "__vModel__": "field118",
+    "size": "default"
+  }, {
+    "__config__": {
+      "label": "单选框组",
+      "labelWidth": null,
+      "showLabel": true,
+      "tag": "a-radio-group",
+      "type": "radio",
+      "changeTag": true,
+      "optionType": "default",
+      "layout": "colFormItem",
+      "span": 24,
+      "regList": [],
+      "required": true,
+      "document": "https://element.eleme.cn/#/zh-CN/component/radio",
+      "result": "",
+      "formId": 116,
+      "renderKey": "1161679292021280"
+    },
+    "__slot__": {
+      "options": [{
+        "label": "选项一",
+        "value": 1
+      }, {
+        "label": "选项二",
+        "value": 2
+      }]
+    },
+    "style": {},
+    "size": "default",
+    "disabled": false,
+    "buttonStyle": "solid",
+    "__vModel__": "field116"
+  }, {
+    "__config__": {
+      "label": "多选框组",
+      "tag": "a-checkbox-group",
+      "type": "checkbox",
+      "defaultValue": [],
+      "span": 24,
+      "showLabel": true,
+      "labelWidth": null,
+      "layout": "colFormItem",
+      "optionType": "default",
+      "required": true,
+      "regList": [],
+      "changeTag": true,
+      "document": "https://element.eleme.cn/#/zh-CN/component/checkbox",
+      "result": [],
+      "formId": 113,
+      "renderKey": "1131679379137367"
+    },
+    "__slot__": {
+      "options": [{
+        "label": "选项一",
+        "value": 1
+      }, {
+        "label": "选项二",
+        "value": 2
+      }]
+    },
+    "style": {},
+    "size": "default",
+    "disabled": false,
+    "__vModel__": "field113"
+  }, {
+    "__config__": {
+      "label": "日期选择",
+      "tag": "a-date-picker",
+      "type": "date",
+      "defaultValue": "2021-12-20",
+      "showLabel": true,
+      "span": 24,
+      "layout": "colFormItem",
+      "required": true,
+      "regList": [],
+      "changeTag": true,
+      "document": "tag.date.picker.document",
+      "formId": 105,
+      "renderKey": "1051679293173961"
+    },
+    "placeholder": "请选择日期选择",
+    "style": {
+      "width": "100%"
+    },
+    "disabled": false,
+    "showToday": true,
+    "showTime": true,
+    "allowClear": true,
+    "size": "default",
+    "format": "YYYY-MM-DD HH:mm:ss",
+    "value-format": "YYYY-MM-DD HH:mm:ss",
+    "inputReadOnly": false,
+    "__vModel__": "field105"
+  }, {
+    "__config__": {
+      "label": "上传",
+      "tag": "a-upload",
+      "type": "upload",
+      "layout": "colFormItem",
+      "defaultValue": null,
+      "showLabel": true,
+      "required": false,
+      "span": 24,
+      "showTip": false,
+      "buttonText": "上传",
+      "regList": [],
+      "changeTag": true,
+      "fileSize": 2,
+      "sizeUnit": "MB",
+      "document": "tag.upload.document",
+      "formId": 110,
+      "renderKey": "1101679293187556"
+    },
+    "__slot__": {
+      "list-type": true
+    },
+    "action": "https://abc.com",
+    "disabled": false,
+    "accept": "",
+    "name": "file",
+    "list-type": "text",
+    "multiple": false,
+    "__vModel__": "field110",
+    "size": "default"
+  }, {
+    "__config__": {
+      "label": "评分",
+      "tag": "a-rate",
+      "type": "rate",
+      "defaultValue": 0,
+      "span": 24,
+      "showLabel": true,
+      "labelWidth": null,
+      "layout": "colFormItem",
+      "required": true,
+      "regList": [],
+      "changeTag": true,
+      "document": "https://element.eleme.cn/#/zh-CN/component/rate",
+      "formId": 109,
+      "renderKey": "1091679293186419"
+    },
+    "style": {},
+    "max": 5,
+    "allow-half": false,
+    "show-text": false,
+    "show-score": false,
+    "disabled": false,
+    "__vModel__": "field109",
+    "size": "default"
+  }, {
+    "__config__": {
+      "label": "月份选择",
+      "tag": "a-month-picker",
+      "type": "month",
+      "defaultValue": "2021-12-20",
+      "showLabel": true,
+      "span": 24,
+      "layout": "colFormItem",
+      "required": true,
+      "regList": [],
+      "changeTag": true,
+      "document": "tag.month.picker.document",
+      "formId": 106,
+      "renderKey": "1061679293182986"
+    },
+    "placeholder": "请选择月份选择",
+    "style": {
+      "width": "100%"
+    },
+    "disabled": false,
+    "allowClear": true,
+    "size": "default",
+    "format": "YYYY-MM",
+    "value-format": "YYYY-MM",
+    "input-read-only": false,
+    "__vModel__": "field106"
+  }, {
+    "__config__": {
+      "label": "开关",
+      "tag": "a-switch",
+      "type": "switch",
+      "defaultValue": false,
+      "span": 24,
+      "showLabel": true,
+      "labelWidth": null,
+      "layout": "colFormItem",
+      "regList": [],
+      "changeTag": true,
+      "document": "https://element.eleme.cn/#/zh-CN/component/switch",
+      "formId": 1010,
+      "renderKey": "1011679293145465"
+    },
+    "style": {},
+    "disabled": false,
+    "checkedChildren": "",
+    "unCheckedChildren": "",
+    "__vModel__": "field1010",
+    "size": "default"
+  }, {
+    "__config__": {
+      "label": "时间选择",
+      "tag": "a-time-picker",
+      "type": "time",
+      "defaultValue": null,
+      "span": 24,
+      "showLabel": true,
+      "layout": "colFormItem",
+      "required": false,
+      "regList": [],
+      "changeTag": true,
+      "document": "tag.time.picker.document",
+      "formId": 104,
+      "renderKey": "1041679293171595"
+    },
+    "placeholder": "请选择时间选择",
+    "style": {
+      "width": "100%"
+    },
+    "disabled": false,
+    "allowClear": true,
+    "size": "default",
+    "use12Hours": false,
+    "format": "HH:mm:ss",
+    "value-format": "HH:mm:ss",
+    "__vModel__": "field104"
+  }, {
+    "__config__": {
+      "label": "滑块",
+      "tag": "a-slider",
+      "type": "slider",
+      "defaultValue": 0,
+      "span": 24,
+      "showLabel": true,
+      "layout": "colFormItem",
+      "labelWidth": null,
+      "required": true,
+      "regList": [],
+      "changeTag": true,
+      "document": "https://element.eleme.cn/#/zh-CN/component/slider",
+      "formId": 119,
+      "renderKey": "1191679292033429"
+    },
+    "disabled": false,
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "reverse": false,
+    "marks": {},
+    "range": false,
+    "__vModel__": "field119",
+    "size": "default"
+  }],
+  "formRef": "elForm",
+  "formModel": "formData",
+  "layout": "vertical",
+  "labelAlign": "right",
+  "labelCol": {
+    "span": 3,
+    "offset": 0
+  },
+  "wrapperCol": {
+    "span": 21,
+    "offset": 0
+  },
+  "formRules": "rules",
+  "gutter": 15,
+  "disabled": false,
+  "formBtns": true,
+  "size": "default"
+}

@@ -1,0 +1,33 @@
+{	"easycom": {
+		"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue",
+		"^form-(.*)": "@/components/form/form-$1/form-$1.vue"
+	},
+	"pages": [{
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarTitleText": "首页"
+		}
+	},
+	{
+		"path": "pages/question/index",
+		"style": {
+			"navigationBarTitleText": "问卷调查"
+		}
+	},
+	{
+		"path": "pages/result/index",
+		"style": {
+			"navigationBarTitleText": "问卷调查"
+		}
+	}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#fff",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"background": "#efeff4"
+		}
+	}
+}
